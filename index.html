@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мосволонтер</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="#mainn"><img src="media/logo.png" alt="" width="146" height="80" id="logo"></a>
+        <div class="nav">
+            <a href="#napr">Направления</a>
+            <a href="#mero">Мероприятия</a>
+            <a href="#galery">Галерея</a>
+            <a href="#mapii">Карта</a>
+        </div>
+        <div class="logo">
+            <a href="mailto:mosvolonter@mail.ru"><img src="media/mail.png" alt=""></a>
+            <a href="https://t.me/mosvol"><img src="media/tg.png" alt=""></a>
+            <a href="https://vk.com/im/channels/-232788981"><img src="media/vk.jpg" alt=""></a>
+        </div>
+    </header>
+    <main>
+        <!-- ========== КАРУСЕЛЬ ========== -->
+        <div id="volunteerCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-pause="hover">
+            
+            <!-- Индикаторы (точки внизу) -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#volunteerCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Слайд 1"></button>
+                <button type="button" data-bs-target="#volunteerCarousel" data-bs-slide-to="1" aria-label="Слайд 2"></button>
+                <button type="button" data-bs-target="#volunteerCarousel" data-bs-slide-to="2" aria-label="Слайд 3"></button>
+                <button type="button" data-bs-target="#volunteerCarousel" data-bs-slide-to="3" aria-label="Слайд 4"></button>
+            </div>
+            
+            <!-- Слайды -->
+            <div class="carousel-inner" id="mainn">
+                <div class="carousel-item active">
+                    <img src="media/DvGxQ7LYofs.jpg" class="d-block w-100" alt="Волонтёры помогают на мероприятии">
+                </div>
+                <div class="carousel-item">
+                    <img src="media/dobr_sno.jpg" class="d-block w-100" alt="Экологическая акция">
+                </div>
+                <div class="carousel-item">
+                    <img src="media/979_920_.jpg" class="d-block w-100" alt="Помощь пожилым людям">
+                </div>
+                <div class="carousel-item">
+                    <img src="media/YNN_0687.jpg" class="d-block w-100" alt="Спортивное волонтёрство">
+                </div>
+            </div>
+            
+            <!-- Кнопка "Назад" -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#volunteerCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Назад</span>
+            </button>
+            
+            <!-- Кнопка "Вперёд" -->
+            <button class="carousel-control-next" type="button" data-bs-target="#volunteerCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Вперёд</span>
+            </button>
+            
+        </div>
+        
+        <div class="info-pad">
+            <h2>Мосволонтер</h2>
+            <p>Доброта меняет город. Ресурсный центр «Мосволонтёр» объединяет тысячи людей, готовых помогать. Присоединяйтесь к крупнейшему волонтёрскому сообществу Москвы — выбирайте направление, участвуйте в событиях и делайте добро привычкой. <br><br>
+                Ты можешь больше, чем думаешь! Стань волонтёром
+            </p>
+            <!-- Кнопка-триггер модального окна -->
+
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                О движении
+                <span class="arrow-icon">⟶</span>
+            </button>
+
+            <!-- Модальное окно -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">О движении</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+                        </div>
+                        <div class="modal-body p-0">
+                            <video width="100%" controls>
+                                <source src="media/Анимационное видео для компании Мосволонтер..mp4" type="video/mp4">
+                                Ваш браузер не поддерживает видео.
+                            </video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="partizan" id="napr"></div>
+
+        <div class="info">
+            <h2>Направления</h2>
+            <div class="columns">
+                <div class="cards">
+                    <div class="card text-center">
+                        <div class="card-header">
+                            <h3>Социальное волонтерство</h3>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">Помощь пожилым, людям с инвалидностью и детям, оказавшимся в трудной ситуации</p><br>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModa2">
+                                Подробнее
+                                <span class="arrow-icon">⟶</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card text-center">
+                        <div class="card-header">
+                            <h3>Экологическое волонтёрство</h3>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">Забота об окружающей среде: раздельный сбор, субботники, просвещение</p>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModa2">
+                                Подробнее
+                                <span class="arrow-icon">⟶</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card text-center">
+                        <div class="card-header">
+                            <h3>Спортивное волонтёрство</h3>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">Поддержка соревнований и популяризация здорового образа жизни</p>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModa2">
+                                Подробнее
+                                <span class="arrow-icon">⟶</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="card text-center">
+                        <div class="card-header">
+                            <h3>Событийное волонтёрство</h3>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">Участие в организации и проведении городских мероприятий: форумов, концертов, спортивных событий</p>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModa2">
+                                Подробнее
+                                <span class="arrow-icon">⟶</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card text-center">
+                        <div class="card-header">
+                            <h3>Медиаволонтёрство</h3>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">Создание контента: фото, видео, тексты, дизайн, ведение соцсетей</p>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModa2">
+                                Подробнее
+                                <span class="arrow-icon">⟶</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card text-center">
+                        <div class="card-header">
+                            <h3>Волонтёрство в культуре</h3>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">Помощь музеям, библиотекам, театрам и культурным центрам</p>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModa2">
+                                Подробнее
+                                <span class="arrow-icon">⟶</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Модальное окно -->
+            <div class="modal fade" id="exampleModa2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabe2">Социальное волонтёрство</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+                        </div>
+                        <div class="modal-body">
+                            <!-- Первая строка -->
+                            <div class="modal-row">
+                                <p>Социальные волонтёры посещают на дому одиноких пенсионеров, помогают с покупками и лекарствами, сопровождают на мероприятиях</p>
+                                <img src="media/1.jpg" alt="Социальное волонтёрство">
+                            </div>
+                            <!-- Вторая строка -->
+                            <div class="modal-row reverse">
+                                <p>В детских домах и реабилитационных центрах проводят игры, мастер-классы и праздники. Это направление требует чуткости и регулярности — но отдача в виде благодарности несравнима ни с чем</p>
+                                <img src="media/5.jpg" alt="Помощь детям">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="partizan" id="mero"></div>
+
+        <div class="info">
+            <h2>Мeроприятия</h2>
+            <div class="columns">
+                <div class="cards">
+                    <div class="card text-left">
+                        <div class="card-header">
+                            <h3>Забег «Добрый километр»</h3>
+                        </div>
+                        <div class="pad20">
+                            <div>
+                                <p class="card-text">Спортивный праздник в поддержку подопечных фондов. Нужны волонтёры для выдачи номеров, воды и поддержки бегунов</p>
+                                <p>Возраст: от <b>16</b> лет</p>
+                                <p>Парк «Сокольники», центральная аллея</p>
+                                <p><b>15 мая 2026</b></p><br>
+                                <button type="button" class="btn btn-primary"  data-bs-toggle="modal" data-bs-target="#exampleModa3">
+                                    Записаться
+                                </button>
+                            </div>
+                            <img src="media/DSC00769.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="card text-left">
+                        <div class="card-header">
+                            <h3>Эко-субботник в Битцевском лесу</h3>
+                        </div>
+                        <div class="pad20">
+                            <div>
+                                <p class="card-text">Уборка парка, сортировка мусора, посадка кустарников. Инвентарь и перчатки предоставляются</p>
+                                <p>Возраст: от <b>14</b> лет</p>
+                                <p>Битцевский лес, вход со стороны ул. Севастопольская</p>
+                                <p><b>5 июня 2026</b></p><br>
+                                <button type="button" class="btn btn-primary"  data-bs-toggle="modal" data-bs-target="#exampleModa3">
+                                    Записаться
+                                </button>
+                            </div>
+                            <img src="media/5.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="card text-left">
+                        <div class="card-header">
+                            <h3>Фестиваль «Город добра»</h3>
+                        </div>
+                        <div class="pad20">
+                            <div>
+                                <p class="card-text">Ярмарка некоммерческих организаций, мастер-классы и лекции. Требуются помощники на интерактивных точках</p>
+                                <p>Возраст: от <b>14</b> лет</p>
+                                <p>ВДНХ, павильон «Рабочий и колхозница»</p>
+                                <p><b>22–23 мая 2026</b></p><br>
+                                <button type="button" class="btn btn-primary"  data-bs-toggle="modal" data-bs-target="#exampleModa3">
+                                    Записаться
+                                </button>
+                            </div>
+                            <img src="media/BOE_5043.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="card text-left">
+                        <div class="card-header">
+                            <h3>День волонтёра в музее «Огни Москвы»</h3>
+                        </div>
+                        <div class="pad20">
+                            <div>
+                                <p class="card-text">Помощь в проведении экскурсий и интерактивных программ для школьников</p>
+                                <p>Возраст: от <b>18</b> лет</p>
+                                <p>Музей «Огни Москвы», Армянский пер., 3–5</p>
+                                <p><b>10 июня 2026</b></p><br>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModa3">
+                                    Записаться
+                                </button>
+                            </div>
+                            <img src="media/65474d80bebbe0d78360cdc4840957ad26e5e3fc.jpeg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Модальное окно -->
+            <div class="modal fade" id="exampleModa3" tabindex="-1" aria-labelledby="exampleModalLabe3" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabe3">Регистрация</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+                        </div>
+                        <div class="modal-body text-center">
+                            <!-- Первая строка -->
+                            <form>
+                                <input type="text" placeholder="ФИО"><br><br>
+                                <input type="email" name="" id="" placeholder="Почта"><br><br>
+                                <input type="password" placeholder="Пароль">
+                            </form>
+                            <br>
+                            <!-- Вторая строка -->
+                            <div class="btns">
+                                <button type="button" class="btn btn-primary">
+                                    Записаться
+                                </button><br><br>
+                                <button type="button" class="btn btn-secondary">
+                                    Войти
+                                </button><br><br>
+                                <button type="button" class="btn btn-secondary">
+                                    Очистить
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="partizan" id="galery"></div>
+
+        <div class="info_fill">
+            <h2>Галерея</h2>
+            <!-- ========== КАРУСЕЛЬ ========== -->
+            <div id="volunteerCarouse2" class="carousel slide" data-bs-ride="carousel" data-bs-pause="hover">
+                
+                <!-- Индикаторы (точки внизу) -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#volunteerCarouse2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Слайд 1"></button>
+                    <button type="button" data-bs-target="#volunteerCarouse2" data-bs-slide-to="1" aria-label="Слайд 2"></button>
+                    <button type="button" data-bs-target="#volunteerCarouse2" data-bs-slide-to="2" aria-label="Слайд 3"></button>
+                    <button type="button" data-bs-target="#volunteerCarouse2" data-bs-slide-to="3" aria-label="Слайд 4"></button>
+                </div>
+                
+                <!-- Слайды -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="media/6a18d614ef66da339b86c7ac95baa879.jpg" class="d-block w-100" alt="Волонтёры помогают на мероприятии">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Форум «Волонтёрство в большом городе»</h5>
+                            <p>Тысяча добрых дел за два дня. Участники форума создали 15 социальных проектов, собрали 200 кг корма для приютов и провели 30 мастер-классов для школьников</p>
+                        </div>
+
+                    </div>
+                    <div class="carousel-item">
+                        <img src="media/3.jpg" class="d-block w-100" alt="Экологическая акция">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Эко-марафон «Чистая Москва»</h5>
+                            <p>Горожане собрали 5 тонн вторсырья, высадили 150 деревьев в парках и очистили берега трёх московских рек. Волонтёры провели 20 экологических уроков для школьников</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="media/50721d5a14cd9510af3cb4832fc319835d8564de.jpeg" class="d-block w-100" alt="Помощь пожилым людям">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Благотворительная ярмарка «Добрые сердца»</h5>
+                            <p>Волонтёры помогли собрать 1,2 миллиона рублей для подопечных фондов. В мероприятии участвовали 50 НКО, 30 мастер-классов и концерт с участием известных артистов</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="media/YNN_9428.jpg" class="d-block w-100" alt="Спортивное волонтёрство">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Спортивный фестиваль «Волонтёрский забег»</h5>
+                            <p>500 участников преодолели дистанции 5 и 10 км в поддержку благотворительных фондов. Волонтёры помогали на стартовых площадках, раздавали воду и поддерживали бегунов на протяжении всей трассы</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Кнопка "Назад" -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#volunteerCarouse2" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Назад</span>
+                </button>
+                
+                <!-- Кнопка "Вперёд" -->
+                <button class="carousel-control-next" type="button" data-bs-target="#volunteerCarouse2" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Вперёд</span>
+                </button>
+            </div>    
+        </div>
+
+        <div class="partizan" id="mapii"></div>
+
+        <div id="map">
+            <h2>Карта</h2>
+            <a href="https://go.2gis.com/ID3u0"><img src="media/map_newnew.png" alt=""></a>
+        </div>
+
+
+    </main>
+    <footer>
+        <div class="head_f">
+            <a href="#mainn"><img src="media/logo.png" alt="" width="328" height="180" id="logo_f"></a>
+            <div class="foot_l">
+                <div class="navi">
+                    <a href="#napr">Направления</a>
+                    <a href="#mero">Мероприятия</a>
+                    <a href="#galery">Галерея</a>
+                    <a href="#map">Карта</a>
+                </div>
+                <div class="logot">
+                    <a href="mailto:mosvolonter@mail.ru"><img src="media/mail.png" alt=""></a>
+                    <a href="https://t.me/mosvol"><img src="media/tg.png" alt=""></a>
+                    <a href="https://vk.com/im/channels/-232788981"><img src="media/vk.jpg" alt=""></a>
+                </div>
+            </div>
+        </div>
+        
+        <hr>
+        <div class="coop">
+            <p>© Мосволонтер 2026. Все права защищены</p>
+            <a href="">Политика Конфиденциальности</a>
+        </div>
+    </footer>
+</body>
+</html>

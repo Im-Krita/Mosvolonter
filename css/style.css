@@ -1,0 +1,789 @@
+* {
+    font-family: "Montserrat", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    background-color: rgb(130, 130, 215) !important;
+}
+
+/* ========== ЭЛЕМЕНТЫ, КОТОРЫЕ ДОЛЖНЫ ОСТАВАТЬСЯ БЕЛЫМИ ========== */
+
+
+/* Хедер и всё внутри */
+header,
+header *,
+.nav,
+.nav *,
+.logo,
+.logo *,
+#logo {
+    background-color: white !important;
+}
+
+/* Модальное окно и всё внутри */
+.modal,
+.modal *,
+.modal-content,
+.modal-header,
+.modal-body,
+.modal-footer,
+.modal-dialog {
+    background-color: transparent !important;
+}
+
+.modal-content {
+    background-color: white !important;
+}
+
+.modal-header {
+    background-color: white !important;
+}
+
+.modal-body {
+    background-color: white !important;
+}
+
+/* Контентные блоки, которые должны быть на фиолетовом фоне */
+.info,
+.info p,
+.info h2, .info-pad{
+    background-color: transparent !important;
+}
+
+/* Кнопка должна быть цветной, а не белой */
+.btn-primary {
+    background-color: rgb(80, 80, 204) !important;
+    border-color: rgb(80, 80, 204) !important;
+}
+
+.btn-primary:active {
+    background-color: rgb(53, 163, 110) !important;
+    border-color: rgb(53, 163, 110) !important;
+}
+
+.btn-secondary {
+    background-color: white !important;
+    border: 2px solid;
+    border-color: rgb(80, 80, 204) !important;
+    color: rgb(80, 80, 204);
+}
+
+.btn-secondary:active {
+    background-color: rgb(53, 163, 110) !important;
+    color: white;
+    border-radius: 12px;
+    padding: 8px 20px 12px 20px;
+    box-shadow: none !important;           /* убираем тень */
+    outline: none !important; 
+    font-size: 20px;  
+}
+
+.btn-secondary:hover{
+    border: 3px solid rgb(60, 60, 187);
+    color: rgb(60, 60, 187);
+    border-radius: 12px;
+    padding: 7px 19px 11px 19px;
+    box-shadow: none !important;           /* убираем тень */
+    outline: none !important; 
+    font-size: 20px;  
+}
+
+h2, h3, h4{
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: bold;
+    padding-bottom: 40px;
+}
+
+h2{
+    font-size: 52px;
+}
+
+/* ========== КНОПКА О ДВИЖЕНИИ ========== */
+
+#map{
+    padding: 0px 120px 120px 120px;
+    color: white;
+}
+
+#map img{
+    width: 100%;
+    height: 600px;
+    object-fit: cover !important;
+    object-position: center !important;
+    border-radius: 20px;
+}
+
+
+input{
+    border: none;
+    font-size: 17px;
+    padding: 8px 12px 12px 12px;
+    border-bottom: 2px solid rgb(130, 130, 215);
+    border-radius: 12px;
+    box-shadow: none !important;           /* убираем тень */
+    outline: none !important; 
+    color: black;
+    width: 460px;
+}
+
+.btns{
+    gap: 20px;
+}
+
+input:hover{
+    border-color: rgb(60, 60, 187);
+}
+
+input:focus{
+    border-color: rgb(53, 163, 110);
+}
+
+/* Убираем пробел между input и ::placeholder */
+input::placeholder :hover {
+    color: rgb(130, 130, 215) !important;
+    opacity: 1 !important;  /* Для Firefox, делает цвет полностью непрозрачным */
+}
+
+/* Для браузеров WebKit (Chrome, Safari, Edge) */
+input::-webkit-input-placeholder {
+    color: rgb(130, 130, 215) !important;
+    opacity: 1 !important;
+}
+
+/* Для Firefox */
+input::-moz-placeholder {
+    color: rgb(130, 130, 215) !important;
+    opacity: 1 !important;
+}
+
+/* Для Internet Explorer */
+input:-ms-input-placeholder {
+    color: rgb(130, 130, 215) !important;
+}
+
+input::placeholder :hover {
+    color: rgb(53, 163, 110) !important;
+    opacity: 1 !important;  /* Для Firefox, делает цвет полностью непрозрачным */
+}
+
+#exampleModa3{
+    height: 700px;
+}
+
+/* Убираем тень у кнопки во всех состояниях */
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+    background-color: rgb(80, 80, 204) !important;
+    border-color: rgb(80, 80, 204) !important;
+    color: white;
+    border-radius: 12px;
+    padding: 8px 20px 12px 20px;
+    box-shadow: none !important;           /* убираем тень */
+    outline: none !important; 
+    font-size: 20px;             /* убираем обводку */
+}
+
+/* Убираем тень у кнопки во всех состояниях */
+.btn-secondary{
+    border-radius: 12px;
+    padding: 8px 20px 12px 20px;
+    box-shadow: none !important;           /* убираем тень */
+    outline: none !important; 
+    font-size: 20px;             /* убираем обводку */
+}
+
+/* Цвет при наведении */
+.btn-primary:hover {
+    background-color: rgb(60, 60, 187) !important;
+    border-color: rgb(60, 60, 187) !important;
+}
+
+/* Цвет при клике (active) */
+.btn-primary:active {
+    background-color: rgb(53, 163, 110) !important;
+    border-color: rgb(53, 163, 110) !important;
+}
+
+/* Убираем фон у стрелки */
+.arrow-icon {
+    background: transparent !important;
+    background-color: transparent !important;
+    display: inline-block;
+    margin-left: 8px;
+    transition: transform 0.3s ease;
+}
+
+/* Стрелка двигается при наведении на кнопку */
+.btn-primary:hover .arrow-icon {
+    transform: translateX(5px);
+}
+
+/* ========== ХЕДЕР ========== */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    padding: 0px 120px;
+    border-radius: 0px 0px 20px 20px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.nav {
+    display: flex;
+    gap: 20px;
+    background-color: white;
+}
+
+.nav a {
+    background-color: white;
+    color: rgb(66, 66, 184);
+    padding: 16px 0px;
+    font-size: 20px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav a:hover {
+    color: rgb(53, 163, 110);
+    border-bottom: 2px solid rgb(53, 163, 110);
+    padding: 16px 0px 14px 0px;
+}
+
+#logo {
+    background-color: white;
+}
+
+.logo, .logot {
+    display: flex;
+    gap: 20px;
+    background-color: white;
+}
+
+.logo img, .logot img{
+    width: 36px;
+    border-radius: 18px;
+}
+
+.navi {
+    display: flex;
+    gap: 20px;
+    background-color: rgb(66, 66, 184);
+}
+
+.navi a {
+    background-color: rgb(66, 66, 184);
+    color: white;
+    padding: 16px 0px;
+    font-size: 20px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.navi a:hover , .coop a:hover{
+    color: rgb(53, 163, 110);
+}
+
+.head_f{
+    background-color: rgb(66, 66, 184);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+footer{
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(66, 66, 184);
+    padding: 0px 120px 12px 120px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+hr{
+    color: rgb(130, 130, 215);
+}
+
+#volunteerCarouse2 .carousel-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.4),  /* сверху полупрозрачный чёрный */
+        rgba(0, 0, 0, 0.7)   /* снизу темнее */
+    );
+    z-index: 1;
+    pointer-events: none;  /* чтобы не мешать кликам по кнопкам */
+}
+
+#volunteerCarouse2 .carousel-caption {
+    z-index: 2;
+    bottom: 8%;
+    left: 0;
+    right: 0;
+    color: white;
+}
+
+#logo_f, .foot_l, .navi, .logot{
+    background-color: rgb(66, 66, 184);
+}
+
+.foot_l{
+    gap: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.coop {
+    gap: 20px;
+    color: rgb(130, 130, 215);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    text-align: center;
+    width: 100%;
+    margin: auto 0;  /* вертикальное центрирование через margin */
+}
+
+.coop p{
+    margin: 0;
+}
+.coop a{
+    text-decoration: none;
+    color: rgb(130, 130, 215);
+}
+
+
+/* ========== ОСНОВНОЙ КОНТЕНТ ========== */
+main {
+    margin-top: 90px;  /* отступ под фиксированный хедер */
+}
+
+/* ========== КАРУСЕЛЬ ЗАХОДИТ ПОД ХЕДЕР ========== */
+.carousel {
+    margin-top: -20px;
+    position: relative;
+    z-index: 1;
+}
+
+/* ========== СТРЕЛКИ - БЕЗ ФОНА ========== */
+.carousel-control-prev,
+.carousel-control-next,
+.carousel-control-prev:hover,
+.carousel-control-next:hover,
+.carousel-control-prev:focus,
+.carousel-control-next:focus {
+    background: transparent !important;
+    background-color: transparent !important;
+    opacity: 1 !important;
+    box-shadow: none !important;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: transparent !important;
+    width: 40px !important;
+    height: 40px !important;
+    background-size: 100% 100% !important;
+}
+
+/* Левая стрелка - обычное состояние */
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%238282d7'%3E%3Cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3E%3C/svg%3E") !important;
+}
+
+/* Правая стрелка - обычное состояние */
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%238282d7'%3E%3Cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3E%3C/svg%3E") !important;
+}
+
+/* Левая стрелка - при наведении */
+.carousel-control-prev:hover .carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%2335a36e'%3E%3Cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3E%3C/svg%3E") !important;
+}
+
+/* Правая стрелка - при наведении */
+.carousel-control-next:hover .carousel-control-next-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%2335a36e'%3E%3Cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3E%3C/svg%3E") !important;
+}
+
+/* ========== НИЖНЯЯ ПАГИНАЦИЯ ========== */
+.carousel-indicators {
+    gap: 12px !important;
+    bottom: 20px !important;
+    background: transparent !important;
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 30px !important;
+    height: 6px !important;
+    border-radius: 10px !important;
+    background-color: rgb(130, 130, 215) !important;
+    opacity: 0.6 !important;
+    transition: all 0.3s ease !important;
+    border: none !important;
+}
+
+.carousel-indicators .active {
+    width: 50px !important;
+    background-color: rgb(53, 163, 110) !important;
+    opacity: 1 !important;
+}
+
+/* ========== ВЫСОТА КАРУСЕЛИ ========== */
+.carousel-inner {
+    height: 600px !important;
+    border-radius: 12px !important;
+    overflow: hidden !important;
+}
+
+.carousel-item {
+    height: 100% !important;
+}
+
+.carousel-item img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: center !important;
+}
+/* ========== Инфо о нас ========== */
+.info, .info-pad{
+    padding: 0px 120px;
+    color: white;
+    margin-bottom: 0px;
+}
+
+.info-pad{
+    margin-top: 120px;
+}
+
+.partizan{
+    padding-bottom: 120px;
+}
+
+.info_fill{
+    margin-top: 0px;
+    color: white;
+}
+
+.info_fill h2{
+    padding: 0px 120px 40px 120px;
+}
+
+.columns{
+    display: grid; grid-template-columns: 50% 50%;
+    gap: 20px;
+}
+
+.pad20{
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    height: 370px;
+}
+
+.pad20 img{
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    display: block;
+    border-radius: 20px;
+}
+
+/* ========== ВТОРОЕ МОДАЛЬНОЕ ОКНО ========== */
+.modal-body {
+    display: flex !important;
+    flex-direction: column;
+    gap: 30px;
+    padding: 24px !important;
+}
+
+.modal-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    align-items: center;
+}
+
+.modal-row.reverse {
+    direction: rtl;
+}
+
+.modal-row.reverse > * {
+    direction: ltr;
+}
+
+.modal-row p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.5;
+    color: rgb(60, 60, 187);
+}
+
+.modal-row img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+
+.pad20 > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.pad20 .btn-primary {
+    width: 159px !important;  /* фиксированная ширина */
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+
+
+
+.modal-body-col img, .modal-body-un img{
+    height: 300px;
+    object-fit: cover !important;
+    border-radius: 20px !important;  /* скругления со всех сторон */
+    display: block;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+
+
+
+
+.card{
+    border-radius: 20px !important;
+    color: rgb(60, 60, 187);
+    overflow: hidden;
+    transition: all 0.3s ease;
+    margin-bottom: 20px;
+    border: 3px solid transparent;
+}
+
+.card:hover {
+    border-color: rgb(80, 80, 204) !important;
+
+}
+
+.card-header{
+    background-color: white;
+    color: rgb(60, 60, 187);
+    height: 53px;
+    border-bottom: 2px rgb(60, 60, 187) solid;
+    padding: 10px;
+    font-size: 24px;
+    border-radius: 4px 4px 20px 20px !important;;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.card:hover .card-header {
+    background-color: rgb(80, 80, 204) !important;
+    color: white !important;
+}
+
+/* Заголовок h3 внутри карточки - наследует цвет */
+.card-header h3 {
+    margin: 0;
+    font-size: 22px;
+    font-weight: 700;
+    transition: color 0.3s ease;
+}
+
+/* При наведении текст заголовка становится белым */
+.card:hover .card-header h3 {
+    color: white !important;
+}
+
+
+
+.card:hover .card-body {
+    background-color: white;
+}
+
+/* ========== МОДАЛЬНОЕ ОКНО - ИСПРАВЛЯЕМ ФИОЛЕТОВЫЙ ФОН ========== */
+
+/* Фон затемнения (полупрозрачный чёрный, не фиолетовый) */
+.modal-backdrop {
+    background-color: rgba(66, 66, 184, 0.75) !important;
+}
+
+/* Содержимое модального окна — белый фон */
+.modal-content {
+    background-color: white !important;
+    border-radius: 20px !important;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* Заголовок модального окна */
+.modal-header {
+    font-size: 36px;
+    background-color: white !important;
+    padding: 40px 40px !important;
+}
+
+.modal-title fs-5{
+    font-size: 52px;
+}
+
+.modal-header .modal-title {
+    color: rgb(80, 80, 204) !important;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+/* Кнопка закрытия */
+.btn-close {
+    background-color: transparent !important;
+}
+
+/* Тело модального окна */
+.modal-body {
+    background-color: white !important;
+    padding: 24px !important;
+    color: #333 !important;
+}
+
+/* Убираем фиолетовый фон у любых элементов внутри модального окна */
+.modal * {
+    background-color: transparent;
+}
+
+.modal .modal-content,
+.modal .modal-header,
+.modal .modal-body {
+    background-color: white !important;
+}
+
+/* ========== МОДАЛЬНОЕ ОКНО - КАСТОМНЫЕ СТИЛИ ========== */
+
+.modal-content {
+    border-radius: 20px !important;
+    overflow: hidden !important;  /* Важно! Чтобы содержимое не вылезало за углы */
+}
+
+/* Размер заголовка 52px */
+.modal-title {
+    font-size: 44px !important;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+/* Убираем линию под заголовком */
+.modal-header {
+    border-bottom: none !important;
+    padding: 24px 32px 0 32px !important;  /* сверху и по бокам, снизу 0 */
+}
+
+/* Крестик закрытия - размер 36px */
+.btn-close {
+    width: 36px !important;
+    height: 36px !important;
+    background-size: 18px !important;
+    opacity: 1 !important;
+    transition: all 0.3s ease;
+}
+
+/* Крестик - обычное состояние (серый/чёрный) */
+.btn-close {
+    background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23333'%3E%3Cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/%3E%3C/svg%3E") center/18px no-repeat !important;
+}
+
+/* Крестик - при наведении (фиолетовый rgb(80,80,204)) */
+.btn-close:hover {
+    background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='rgb(80,80,204)'%3E%3Cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/%3E%3C/svg%3E") center/18px no-repeat !important;
+}
+
+/* Крестик - при нажатии (зелёный rgb(53,163,110)) */
+.btn-close:active {
+    background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='rgb(53,163,110)'%3E%3Cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/%3E%3C/svg%3E") center/18px no-repeat !important;
+}
+
+/* Убираем фокусную обводку у крестика */
+.btn-close:focus {
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+/* Тело модального окна - отступы */
+.modal-body{
+    padding: 40px !important;
+    border-radius: 20px !important;
+}
+
+.modal-body video{
+    border-radius: 20px;
+}
+
+/* Увеличиваем ширину модального окна для большого заголовка */
+.modal-dialog {
+    max-width: 800px !important;
+}
+
+
+/* ========== АДАПТИВ ========== */
+@media (max-width: 1200px) {
+    .carousel-inner {
+        height: 430px !important;
+    }
+    
+    header {
+        padding: 0px 20px !important;
+    }
+    
+    .nav a {
+        font-size: 17px !important;
+    }
+}
+@media (max-width: 768px) {
+    .carousel-inner {
+        height: 230px !important;
+        padding-bottom: 12px;
+    }
+    #logo{
+        height: 74px;
+        width: 134px;
+    }
+
+    .logo{
+        gap: 12px;
+    }
+
+    header {
+        padding: 0px 16px !important;
+    }
+    
+}

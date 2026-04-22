@@ -1,0 +1,34 @@
+// 1. Импортируем функции Bootstrap (обязательно первым)
+@import "../node_modules/bootstrap/scss/functions";
+
+// 2. Переопределяем переменные карусели
+// Цвета из палитры "Мосволонтёр"
+$carousel-control-color: rgb(130, 130, 215);        // цвет стрелок (светло-синий)
+$carousel-indicator-active-bg: rgb(53, 163, 110);   // цвет активной точки (зелёный)
+$carousel-indicator-opacity: 0.5;                   // прозрачность неактивных точек
+$carousel-control-opacity: 0.8;                     // прозрачность стрелок
+$carousel-control-hover-opacity: 1;                 // прозрачность при наведении
+
+// 3. Импортируем только нужные части Bootstrap
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/variables-dark";
+@import "../node_modules/bootstrap/scss/maps";
+@import "../node_modules/bootstrap/scss/mixins";
+@import "../node_modules/bootstrap/scss/root";
+
+// 4. Импортируем компоненты, нужные для карусели
+@import "../node_modules/bootstrap/scss/reboot";
+@import "../node_modules/bootstrap/scss/images";
+@import "../node_modules/bootstrap/scss/containers";
+@import "../node_modules/bootstrap/scss/grid";
+@import "../node_modules/bootstrap/scss/carousel";   // ← главный компонент
+
+// 5. Импортируем утилиты
+@import "../node_modules/bootstrap/scss/utilities";
+@import "../node_modules/bootstrap/scss/utilities/api";
+
+// 6. Дополнительные стили для карусели (по желанию)
+.carousel-item img {
+    max-height: 520px;
+    object-fit: cover;
+}
